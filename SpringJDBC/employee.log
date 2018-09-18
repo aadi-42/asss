@@ -1,0 +1,38 @@
+2018-09-18-main-INFO -org.springframework.context.support.ClassPathXmlApplicationContext:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2b05039f: startup date [Tue Sep 18 11:57:48 IST 2018]; root of context hierarchy
+2018-09-18-main-INFO -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:Loading XML bean definitions from class path resource [jdbc.xml]
+2018-09-18-main-INFO -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:Loading properties file from class path resource [oracle.properties]
+2018-09-18-main-INFO -org.springframework.jdbc.datasource.DriverManagerDataSource:Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2018-09-18-main-INFO -org.springframework.context.support.ClassPathXmlApplicationContext:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2b05039f: startup date [Tue Sep 18 12:10:24 IST 2018]; root of context hierarchy
+2018-09-18-main-INFO -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:Loading XML bean definitions from class path resource [jdbc.xml]
+2018-09-18-main-INFO -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:Loading properties file from class path resource [oracle.properties]
+2018-09-18-main-INFO -org.springframework.jdbc.datasource.DriverManagerDataSource:Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2018-09-18-main-INFO -org.springframework.context.support.ClassPathXmlApplicationContext:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2b05039f: startup date [Tue Sep 18 12:12:55 IST 2018]; root of context hierarchy
+2018-09-18-main-INFO -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:Loading XML bean definitions from class path resource [jdbc.xml]
+2018-09-18-main-INFO -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:Loading properties file from class path resource [oracle.properties]
+2018-09-18-main-INFO -org.springframework.jdbc.datasource.DriverManagerDataSource:Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2018-09-18-main-INFO -org.springframework.context.support.ClassPathXmlApplicationContext:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2b05039f: startup date [Tue Sep 18 12:13:26 IST 2018]; root of context hierarchy
+2018-09-18-main-INFO -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:Loading XML bean definitions from class path resource [jdbc.xml]
+2018-09-18-main-INFO -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:Loading properties file from class path resource [oracle.properties]
+2018-09-18-main-INFO -org.springframework.jdbc.datasource.DriverManagerDataSource:Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2018-09-18-main-INFO -org.springframework.context.support.ClassPathXmlApplicationContext:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2b05039f: startup date [Tue Sep 18 12:25:58 IST 2018]; root of context hierarchy
+2018-09-18-main-INFO -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:Loading XML bean definitions from class path resource [jdbc.xml]
+2018-09-18-main-INFO -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:Loading properties file from class path resource [oracle.properties]
+2018-09-18-main-INFO -org.springframework.jdbc.datasource.DriverManagerDataSource:Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2018-09-18-main-INFO -org.springframework.context.support.ClassPathXmlApplicationContext:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2b05039f: startup date [Tue Sep 18 14:04:22 IST 2018]; root of context hierarchy
+2018-09-18-main-INFO -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:Loading XML bean definitions from class path resource [jdbc.xml]
+2018-09-18-main-INFO -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:Loading properties file from class path resource [oracle.properties]
+2018-09-18-main-INFO -org.springframework.jdbc.datasource.DriverManagerDataSource:Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2018-09-18-main-INFO -org.springframework.context.support.ClassPathXmlApplicationContext:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2b05039f: startup date [Tue Sep 18 14:05:06 IST 2018]; root of context hierarchy
+2018-09-18-main-INFO -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:Loading XML bean definitions from class path resource [jdbc.xml]
+2018-09-18-main-INFO -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:Loading properties file from class path resource [oracle.properties]
+2018-09-18-main-INFO -org.springframework.jdbc.datasource.DriverManagerDataSource:Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2018-09-18-main-INFO -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-09-18-main-INFO -org.springframework.jdbc.support.SQLErrorCodesFactory:SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-09-18-main-INFO -org.springframework.context.support.ClassPathXmlApplicationContext:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2b05039f: startup date [Tue Sep 18 14:06:41 IST 2018]; root of context hierarchy
+2018-09-18-main-INFO -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:Loading XML bean definitions from class path resource [jdbc.xml]
+2018-09-18-main-INFO -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:Loading properties file from class path resource [oracle.properties]
+2018-09-18-main-INFO -org.springframework.jdbc.datasource.DriverManagerDataSource:Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+2018-09-18-main-INFO -org.springframework.context.support.ClassPathXmlApplicationContext:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@64a294a6: startup date [Tue Sep 18 14:55:05 IST 2018]; root of context hierarchy
+2018-09-18-main-INFO -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:Loading XML bean definitions from class path resource [jdbc.xml]
+2018-09-18-main-INFO -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:Loading properties file from class path resource [oracle.properties]
+2018-09-18-main-INFO -org.springframework.jdbc.datasource.DriverManagerDataSource:Loaded JDBC driver: oracle.jdbc.driver.OracleDriver

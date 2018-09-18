@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<bean id="empbean" class="com.cg.collection.Emp">
+		<property name="id" value="122" />
+		<property name="name" value="Neha" />
+		<property name="date" value="today" />
+	</bean>
+	
+	<bean class = "org.springframework.beans.factory.config.CustomEditorConfigurer">
+	<property name = "customEditors">
+	<map>
+	<entry key="java.sql.Date" value="com.cg.collection.SQLDateEditor">
+	</entry>
+	</map>
+	</property>
+	</bean>
+	
+	<bean id="state" class="com.cg.collection.StateListImpl">
+		<property name="empSet">
+			<set>
+				<ref bean="empbean" />
+				<bean class="com.cg.collection.Emp">
+				<property name="id" value="133" />
+				<property name="name" value="Aditya" />
+				<property name="date" value="2018-01-22" />
+				</bean>
+			</set>
+		</property>
+
+		<property name="stateList">
+			<list>
+				<value>Karnataka</value>
+				<value>Maharashtra</value>
+				<value>Telangana</value>
+				<value>Kerala</value>
+			</list>
+		</property>
+
+		<property name="stateSet">
+			<set>
+				<value>Punjab</value>
+				<value>Rajasthan</value>
+				<value>Gujrat</value>
+				<value>Punjab</value>
+			</set>
+		</property>
+
+		<property name="stateMap">
+			<map>
+				<entry key="1" value="Assam"></entry>
+				<entry key="2" value="Delhi"></entry>
+				<entry key="3" value="Sikkim"></entry>
+				<entry key="4" value="Goa"></entry>
+			</map>
+		</property>
+
+		<property name="stateProps">
+			<props>
+				<prop key="One">Land</prop>
+				<prop key="Two">Beach</prop>
+				<prop key="Three">Tourism</prop>
+				<prop key="Four">Architecture</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

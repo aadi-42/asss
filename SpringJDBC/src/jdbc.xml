@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="oracle.properties" />
+	</bean>
+
+	<bean id="eService" class="com.cg.service.EmployeeServiceImpl">
+		<property name="eDao" ref="edao" />
+	</bean>
+
+	<bean id="edao" class="com.cg.dao.EmployeeDaoImpl">
+		<property name="jdbcTemplate" ref="jdbctemp" />
+	</bean>
+
+	<bean id="jdbctemp" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dsource" />
+	</bean>
+
+	<bean id="dsource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${db.driver}" />
+		<property name="url" value="${db.url}" />
+		<property name="username" value="system" />
+		<property name="password" value="orcl11g" />
+	</bean>
+
+</beans>
+	
