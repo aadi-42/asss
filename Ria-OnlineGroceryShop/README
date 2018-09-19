@@ -1,0 +1,16 @@
+/*
+	Before Running the Program
+	Paste the following in Sql Server
+*/
+
+create table grocery_category(
+category varchar2(45) primary key);
+
+create table grocery_hib(
+id number(5) primary key,
+name varchar2(45),
+price number(8, 2),
+category varchar2(45),
+quantity number(5),
+unit varchar2(45),
+description varchar2(45));
