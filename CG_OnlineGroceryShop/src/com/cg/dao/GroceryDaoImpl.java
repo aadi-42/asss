@@ -6,37 +6,49 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-
-
 import com.cg.bean.Category;
+import com.cg.bean.Grocery;
 
 @Transactional
 @Repository
 public class GroceryDaoImpl implements GroceryDao {
 
 	@PersistenceContext
-	private EntityManager eManager;
+	private EntityManager entityManager;
 
 	@Override
 	public List<String> getCategoryList() {
-
 		// JPA code here
 		List<String> categoryList = new ArrayList<String>();
-		List<Category> caList = new ArrayList<Category>();
-		String result = "SELECT category from Category category";
-		Query query = eManager.createQuery(result,Category.class);
-		caList = query.getResultList();
-		for (Category category : caList) {
+		List<Category> catList = new ArrayList<Category>();
+		String result = "SELECT c.category from Category c";
+		
+		TypedQuery<String> query = entityManager.createQuery(result,String.class);
+		categoryList = query.getResultList();
+		/*for (Category category : catList) {
 			
 			categoryList.add(category.getCategory());
-		}
+		}*/
 		return categoryList;
 
-		
+	}
+
+	public boolean saveGrocery(Grocery grocery) {
+
+		boolean success=false;
+		try{
+		entityManager.persist(grocery);
+		success=true;
+		} catch (Exception e){
+			e.printStackTrace(); //removelater
+		}
+		return success;
+
 	}
 
 }

@@ -5,20 +5,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="grocery_category")
+@Table(name = "grocery_category")
 public class Category {
-	
-	
+
 	@Id
 	private String category;
 
-	@Override
-	public String toString() {
-		return "Category [category=" + category + "]";
-	}
-
 	public Category() {
-		
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public Category(String category) {
@@ -32,6 +27,11 @@ public class Category {
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+	@Override
+	public String toString() {
+		return "Category [category=" + category + "]";
 	}
 
 }

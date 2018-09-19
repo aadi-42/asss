@@ -1,53 +1,52 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<!DOCTYPE html >
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>OnlineGroceryShop</title>
 </head>
-<body style="background-color: pink"align="center">
-	<h2>Online Grocery Shop</h2>
-	<h3>Add an Item</h3>
-
-	<form:form action="submitGrocery.obj" modelAttribute="grocery">
-		<table align="center"  >
+<body style="background-color: cyan">
+	<h2 align="center">Online Grocery Shop</h2>
+	<h3 align="center">Add Item...</h3>
+	<form:form action="submitgrocery.obj" modelAttribute="grocery">
+		<table align="center">
 			<tr>
-				<th>Item Name</th>
+				<td>Name</td>
 				<td><form:input path="name" /></td>
 			</tr>
+
 			<tr>
-				<th>Price(Rs)</th>
+				<td>Price (Rs.)</td>
 				<td><form:input path="price" /></td>
 			</tr>
+
 			<tr>
-				<th>Category</th>
-				<td><form:select path="category" >
-				<form:option value="Select"></form:option>
-				<form:options items="${clist}"/>
-				</form:select></td>
+				<td>Category</td>
+				<td><form:select path="category">
+						<form:option value="Select"></form:option>
+						<form:options items="${clist}" />
+					</form:select></td>
 			</tr>
+
 			<tr>
-				<th>Quantity</th>
+				<td>Quantity</td>
 				<td><form:input path="quantity" /></td>
 			</tr>
+
 			<tr>
-				<th>Unit</th>
+				<td>Unit</td>
 				<td><form:input path="unit" /></td>
 			</tr>
+
 			<tr>
-				<th>Description</th>
-				<td><form:textarea path="description" /></td>
+				<td>Description</td>
+				<td><form:input path="description" /></td>
 			</tr>
 		</table>
-
-		<input type="submit" value="Add the item">
-
-
-
+		<input type="submit" value="Add to Cart">
 	</form:form>
 </body>
 </html>
