@@ -51,4 +51,19 @@ public class GroceryDaoImpl implements GroceryDao {
 
 	}
 
+	@Override
+	public List<Grocery> retrievegrocery() {
+		// TODO Auto-generated method stub
+		List<Grocery> grocList = new ArrayList<Grocery>();
+		String result = "SELECT g from Grocery g";
+		
+		TypedQuery<Grocery> query = entityManager.createQuery(result,Grocery.class);
+		grocList = query.getResultList();
+		/*for (Category category : catList) {
+			
+			categoryList.add(category.getCategory());
+		}*/
+		return grocList;
+	}
+
 }

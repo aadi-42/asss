@@ -34,7 +34,7 @@
 		<property name="jpaPropertyMap">
 			<map>
 				<entry key="hibernate.dialect" value="org.hibernate.dialect.OracleDialect"></entry>
-				<entry key="hibernate.hbm2ddl.auto" value="update"></entry>
+				<!-- <entry key="hibernate.hbm2ddl.auto" value="update"></entry> -->
 			</map>
 		</property>
 	</bean>

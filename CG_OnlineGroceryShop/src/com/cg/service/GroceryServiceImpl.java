@@ -29,4 +29,10 @@ public class GroceryServiceImpl implements GroceryService {
 		return groceryDao.saveGrocery(grocery);
 	}
 
+	@Override
+	public List<Grocery> retrievegrocery() {
+		// TODO Auto-generated method stub
+		return groceryDao.retrievegrocery();
+	}
+
 }

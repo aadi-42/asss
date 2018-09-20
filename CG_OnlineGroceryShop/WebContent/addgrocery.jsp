@@ -14,13 +14,17 @@
 	<form:form action="submitgrocery.obj" modelAttribute="grocery">
 		<table align="center">
 			<tr>
-				<td>Name</td>
-				<td><form:input path="name" /></td>
+				<td>Item Name</td>
+				<td><form:input path="name" />
+					<form:errors path="name" />
+				</td>
 			</tr>
 
 			<tr>
 				<td>Price (Rs.)</td>
-				<td><form:input path="price" /></td>
+				<td><form:input path="price" />
+					<form:errors path="price" />
+				</td>
 			</tr>
 
 			<tr>
@@ -28,22 +32,26 @@
 				<td><form:select path="category">
 						<form:option value="Select"></form:option>
 						<form:options items="${clist}" />
-					</form:select></td>
+					</form:select>
+					<form:errors path="category" /></td>
 			</tr>
 
 			<tr>
 				<td>Quantity</td>
-				<td><form:input path="quantity" /></td>
+				<td><form:input path="quantity" />
+					<form:errors path="quantity" /></td>
 			</tr>
 
 			<tr>
 				<td>Unit</td>
-				<td><form:input path="unit" /></td>
+				<td><form:input path="unit" />
+					<form:errors path="unit" /></td>
 			</tr>
 
 			<tr>
 				<td>Description</td>
-				<td><form:input path="description" /></td>
+				<td><form:input path="description" />
+					<form:errors path="description" /></td>
 			</tr>
 		</table>
 		<input type="submit" value="Add to Cart">

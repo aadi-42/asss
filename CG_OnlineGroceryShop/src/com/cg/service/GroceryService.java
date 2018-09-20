@@ -11,4 +11,6 @@ public interface GroceryService {
 
 	boolean saveGrocery(Grocery grocery);
 
+	List<Grocery> retrievegrocery();
+
 }

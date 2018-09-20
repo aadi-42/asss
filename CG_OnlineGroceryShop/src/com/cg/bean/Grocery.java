@@ -4,8 +4,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.PersistenceContext;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Pattern;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(name = "grocery_hib")
@@ -46,6 +54,7 @@ public class Grocery {
 		this.id = id;
 	}
 
+	@NotEmpty(message="Item Name is required")
 	public String getName() {
 		return name;
 	}
@@ -54,6 +63,8 @@ public class Grocery {
 		this.name = name;
 	}
 
+	@DecimalMin(value="1.0", inclusive=true)
+	@DecimalMax(value="1000.0", inclusive=true)
 	public float getPrice() {
 		return price;
 	}
@@ -62,6 +73,7 @@ public class Grocery {
 		this.price = price;
 	}
 
+	@Pattern(regexp="^(?:(?!Select).)*$", message="Select a Category")
 	public String getCategory() {
 		return category;
 	}
@@ -70,6 +82,7 @@ public class Grocery {
 		this.category = category;
 	}
 
+    @Min(1)
 	public int getQuantity() {
 		return quantity;
 	}
@@ -78,6 +91,7 @@ public class Grocery {
 		this.quantity = quantity;
 	}
 
+	@Pattern(regexp="[a-zA-Z]+", message="Please Enter a Valid Unit (kgs, litres, etc...)")
 	public String getUnit() {
 		return unit;
 	}
@@ -85,7 +99,8 @@ public class Grocery {
 	public void setUnit(String unit) {
 		this.unit = unit;
 	}
-
+	
+	@Pattern(regexp="[a-zA-Z]+", message="Please Enter a Description")
 	public String getDescription() {
 		return description;
 	}

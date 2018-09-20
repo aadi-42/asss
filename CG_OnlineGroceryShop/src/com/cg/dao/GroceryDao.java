@@ -10,4 +10,6 @@ public interface GroceryDao {
 
 	boolean saveGrocery(Grocery grocery);
 
+	List<Grocery> retrievegrocery();
+
 }
